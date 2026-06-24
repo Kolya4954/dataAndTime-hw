@@ -11,6 +11,7 @@ const neededTime = new Date(2026, 7, 1)
 
 const idi = setInterval(() =>{
     const timeNow = new Date()
+    
     const time = neededTime - timeNow
     if(time <= 0){
     clearInterval(id)
