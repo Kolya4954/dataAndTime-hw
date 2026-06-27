@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/Kolya4954/dataAndTime-hw/issues"
   },
-  "homepage": "https://github.com/Kolya4954/dataAndTime-hw#readme",
+  "homepage": "https://github.com/Kolya4954/dataAndTime-hw",
   "dependencies": {
     "gh-pages": "^6.3.0",
     "parcel": "^2.16.4"
