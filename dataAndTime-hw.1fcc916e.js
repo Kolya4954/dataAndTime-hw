@@ -714,24 +714,24 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"fILKw":[function(require,module,exports,__globalThis) {
-const headingRef = document.querySelector(".heading");
 const daysRef = document.querySelector("[data-value='days']");
 const hoursRef = document.querySelector("[data-value='hours']");
 const minutesRef = document.querySelector("[data-value='mins']");
 const secondsRef = document.querySelector("[data-value='secs']");
-const neededTime = new Date(2026, 7, 1);
+const neededTime = new Date(2026, 11, 31, 23, 59, 59);
 const idi = setInterval(()=>{
     const timeNow = new Date();
     const time = neededTime - timeNow;
-    if (time <= 0) {
-        clearInterval(id);
-        return;
-    }
     const days = Math.floor(time / 86400000);
     const hours = Math.floor(time % 86400000 / 3600000);
     const mins = Math.floor(time % 3600000 / 60000);
     const secs = Math.floor(time % 60000 / 1000);
+    daysRef.textContent = days;
+    hoursRef.textContent = hours;
+    minutesRef.textContent = mins;
+    secondsRef.textContent = secs;
 }, 1000);
+setInterval(()=>{}, 1000);
 
 },{}]},["iUuJv","fILKw"], "fILKw", "parcelRequire3a23", {})
 
