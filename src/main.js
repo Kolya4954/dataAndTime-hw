@@ -23,6 +23,7 @@ const secs = Math.floor((time % (1000 * 60)) / 1000);
     hoursRef.textContent = hours
     minutesRef.textContent = mins
     secondsRef.textContent = secs
+    
 
 },1000);
 

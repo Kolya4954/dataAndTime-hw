@@ -1,0 +1,2 @@
+let e=document.querySelector("[data-value='days']"),t=document.querySelector("[data-value='hours']"),a=document.querySelector("[data-value='mins']"),o=document.querySelector("[data-value='secs']"),n=new Date(2026,11,31,23,59,59);setInterval(()=>{let l=n-new Date,r=Math.floor(l/864e5),u=Math.floor(l%864e5/36e5),c=Math.floor(l%36e5/6e4),d=Math.floor(l%6e4/1e3);e.textContent=r,t.textContent=u,a.textContent=c,o.textContent=d},1e3),setInterval(()=>{},1e3);
+//# sourceMappingURL=dataAndTime-hw.02a0d4c3.js.map
